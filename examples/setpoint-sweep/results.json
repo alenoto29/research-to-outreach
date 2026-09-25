@@ -1,0 +1,13 @@
+{
+  "analysis_id": "setpoint_sweep",
+  "method": "sweep_t_in",
+  "metric": "sweep T_interna -> kWh/€",
+  "value": [
+    {"T_in": 24, "delta_T": 11, "el_kwh_season": 22.0, "season_eur": 5.5},
+    {"T_in": 26, "delta_T": 9, "el_kwh_season": 18.0, "season_eur": 4.5},
+    {"T_in": 28, "delta_T": 7, "el_kwh_season": 14.0, "season_eur": 3.5}
+  ],
+  "unit": "kWh and EUR",
+  "inputs": ["inputs.json (invented assumptions)"],
+  "computed": true
+}

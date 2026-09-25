@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.tmp/
+*.docx
+*.xlsx
+*.png
+*.pdf
+*.csv
+!examples/**/*.csv
+!examples/**/*.png
+*.env

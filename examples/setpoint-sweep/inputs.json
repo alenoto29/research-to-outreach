@@ -1,0 +1,20 @@
+{
+  "case_status": "synthetic teaching example; no observed building or tariff data",
+  "model": {
+    "K_cond_W_per_K": 100,
+    "K_inf_W_per_K": 0,
+    "outdoor_temperature_C": 35,
+    "indoor_setpoints_C": [24, 26, 28],
+    "seer": 4,
+    "operating_hours_per_day": 8,
+    "season_days": 10,
+    "tariff_EUR_per_kWh": 0.25
+  },
+  "assumptions": [
+    "constant outdoor temperature during operating hours",
+    "envelope conductance is a hypothetical 100 W/K",
+    "no infiltration, solar/internal gains, duty-cycle adjustment or thermal storage",
+    "seasonal operation is 8 hours/day for 10 days",
+    "SEER is held constant at 4"
+  ]
+}

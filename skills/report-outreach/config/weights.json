@@ -1,0 +1,78 @@
+{
+  "weights_version": "v1",
+  "weights": {
+    "topic_correlation": 45,
+    "authority": 20,
+    "recency": 15,
+    "history": 20
+  },
+  "topic_correlation": {
+    "on_topic_share": 0.6,
+    "headline_share": 0.4,
+    "on_topic_cap": 5,
+    "headline_cap": 3
+  },
+  "authority": {
+    "author_page_points": 8,
+    "seniority_senior_points": 6,
+    "seniority_staff_points": 4,
+    "seniority_freelance_points": 2,
+    "volume_high_points": 6,
+    "volume_mid_points": 4,
+    "volume_low_points": 2,
+    "senior_titles": ["direttore", "caporedattore", "vicedirettore", "capo redattore", "editor-in-chief", "responsabile"],
+    "staff_titles": ["redattore", "giornalista", "reporter", "editor", "corrispondente", "inviato"],
+    "freelance_titles": ["freelance", "collaboratore", "contributor"]
+  },
+  "recency": {
+    "full_days": 90,
+    "half_days": 365
+  },
+  "history": {
+    "neutral_discovery": 10,
+    "relationship_max": 12,
+    "fatigue_max": 8,
+    "relationship_never_contacted": 6,
+    "relationship_contacted_no_reply": 3,
+    "fatigue_never_contacted": 4,
+    "fatigue_rested_days": 90,
+    "fatigue_rested_points": 8,
+    "fatigue_recent_points": 2,
+    "positive_response_statuses": ["replied", "interested", "positive", "responded", "published", "risposto", "interessato"],
+    "unresponsive_contact_threshold": 3
+  },
+  "cooldown_default_days": 30,
+  "cooldown_responder_days": 30,
+  "blacklist_domains": ["blocked.example.test", "never-contact.example.test"],
+  "dr_gate": {
+    "top_min": 50,
+    "mid_max": 80
+  },
+  "selection": {
+    "target_size": 25,
+    "min_rows": 20,
+    "max_rows": 30,
+    "quota_dashboard": 0.5,
+    "max_source_share": 0.6,
+    "max_per_journal": 2,
+    "swap_gap_threshold": 10,
+    "thin_pool_factor": 1.5
+  },
+  "tiers": {
+    "tier_c_cap": 3
+  },
+  "hunter": {
+    "search_budget_per_run": 20,
+    "verification_budget_per_run": 40,
+    "finder_min_score": 80
+  },
+  "dr": {
+    "throttle_seconds": 1.0
+  },
+  "shortlist": {
+    "dashboard_min": 30,
+    "dashboard_max": 40,
+    "discovery_target_min": 25,
+    "discovery_target_max": 30
+  }
+}
