@@ -4,6 +4,14 @@ This project is a **toolkit for turning research into a report and then into out
 
 It is **not** one command that turns any topic or CSV into a trustworthy report and a list of journalists.
 
+## Start with your topic and angle
+
+Open this repository in a coding LLM that can read files and run Python. Give it this prompt:
+
+> Read `RUNBOOK.md`. My topic is **[topic]** and my angle is **[angle]**. Work from source research through a checked report to a shortlist and unsent, personalized pitch drafts. Show me which claims and contacts have been verified; stop if essential data are missing. Use my Serper key for web searches, not your own credentials.
+
+Set **your own** `SERPER_API_KEY` in that environment before starting. The key is for Serper web search only; the LLM you opened the repo in supplies the writing/analysis. No Anthropic or OpenAI API key is needed by the scripts. Do not paste keys into the prompt or commit them. The workflow still needs source checks, enough data for any numerical analysis and human approval of the report and outreach drafts. See [`RUNBOOK.md`](RUNBOOK.md) for the steps and expected files.
+
 ## Start with the worked example
 
 You need Python 3.10+. Open [`examples/setpoint-sweep/README.md`](examples/setpoint-sweep/README.md): it walks through a small, invented cooling-cost calculation, a report draft, a fictional candidate and an unsent pitch. The figures show how the arithmetic works; they are **not** real savings. The example's report and chart are already included, so you can read them without installing anything.
