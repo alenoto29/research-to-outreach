@@ -6,7 +6,7 @@ It is **not** one command that turns any topic or CSV into a trustworthy report 
 
 ## Start with your topic and angle
 
-Open this repository in a coding LLM that can read files and run Python. Give it this prompt:
+Download the repository (or run `git clone https://github.com/alenoto29/research-to-outreach.git`) and open the folder in a coding LLM that can read files and run Python. Give it this prompt:
 
 > Read `RUNBOOK.md`. My topic is **[topic]** and my angle is **[angle]**. Work from source research through a checked report to a shortlist and unsent, personalized pitch drafts. Show me which claims and contacts have been verified; stop if essential data are missing. Use my Serper key for web searches, not your own credentials.
 
@@ -56,4 +56,4 @@ python3 skills/report-outreach/tests/run_tests.py
 
 Passing tests confirms specific calculations and file/ranking rules, **not** that your sources, assumptions, report or contacts are correct. Report DOCX and chart generation need optional packages (`pip install -r requirements-optional.txt`). Network searches, paid email lookup and database updates require separate, explicit setup; the example uses none of them. Keep private research and contact data out of Git.
 
-The code was extracted and adapted from Alessandro Noto's internal workflow with AI assistance. See [`PROVENANCE.md`](PROVENANCE.md): **license selection and public-release review are still pending**. This repository is not yet cleared for public release.
+The code was extracted and adapted from Alessandro Noto's internal workflow with AI assistance. Licensed under [MIT](LICENSE). See [`PROVENANCE.md`](PROVENANCE.md) for origin, dependencies and release scope.

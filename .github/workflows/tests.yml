@@ -1,0 +1,26 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-tests:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m unittest discover -s papers-references/tests -v
+      - run: python -m unittest discover -s report-writer/tests -v
+      - run: python skills/journalist-finder/tests/run_tests.py
+      - run: python skills/report-outreach/tests/run_tests.py
