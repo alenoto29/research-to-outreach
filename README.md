@@ -14,10 +14,6 @@ An LLM helps research and write, but never invents numbers, evidence or contacts
 
 <br>
 
-<img alt="Chart from the worked example: cooling energy at three indoor setpoints" src="examples/setpoint-sweep/setpoint-sweep.png" width="640">
-
-<sub>From the worked example: an invented, deliberately narrow calculation, not real savings.</sub>
-
 </div>
 
 <br>
